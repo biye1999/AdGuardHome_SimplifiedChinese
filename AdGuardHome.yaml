@@ -1,0 +1,430 @@
+bind_host: 0.0.0.0
+bind_port: 80
+users:
+- name: admin
+  password: $2y$05$LSJz6ECy0bzne5UFbKfY3Obq5m1nF5GutkeRAlII8YOB1VNkyp57C
+language: zh-cn
+rlimit_nofile: 0
+web_session_ttl: 3600
+dns:
+  bind_host: 0.0.0.0
+  port: 53
+  statistics_interval: 1
+  querylog_enabled: true
+  querylog_interval: 1
+  querylog_memsize: 0
+  protection_enabled: true
+  blocking_mode: nxdomain
+  blocking_ipv4: ""
+  blocking_ipv6: ""
+  blocked_response_ttl: 3600
+  ratelimit: 0
+  ratelimit_whitelist: []
+  refuse_any: true
+  bootstrap_dns:
+  - 223.5.5.5:53
+  - 223.6.6.6:53
+  all_servers: true
+  edns_client_subnet: true
+  aaaa_disabled: false
+  allowed_clients: []
+  disallowed_clients: []
+  blocked_hosts: []
+  parental_block_host: family-block.dns.adguard.com
+  safebrowsing_block_host: standard-block.dns.adguard.com
+  cache_size: 65536
+  upstream_dns:
+  - tcp://dns.alidns.com:53
+  - tls://dns.alidns.com:853
+  - https://dns.alidns.com:443/dns-query
+  filtering_enabled: false
+  filters_update_interval: 1
+  parental_enabled: false
+  safesearch_enabled: false
+  safebrowsing_enabled: false
+  safebrowsing_cache_size: 65536
+  safesearch_cache_size: 65536
+  parental_cache_size: 65536
+  cache_time: 3600
+  rewrites: []
+  blocked_services: []
+tls:
+  enabled: false
+  server_name: ""
+  force_https: false
+  port_https: 0
+  port_dns_over_tls: 0
+  allow_unencrypted_doh: false
+  strict_sni_check: false
+  certificate_chain: ""
+  private_key: ""
+  certificate_path: ""
+  private_key_path: ""
+filters:
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/1.txt
+  name: AdGuard Russian filter
+  id: 1001
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/2.txt
+  name: AdGuard Base filter
+  id: 1002
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/3.txt
+  name: AdGuard Tracking Protection filter
+  id: 1003
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/4.txt
+  name: AdGuard Social Media filter
+  id: 1004
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/5.txt
+  name: AdGuard Experimental filter
+  id: 1005
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/6.txt
+  name: AdGuard German filter
+  id: 1006
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/7.txt
+  name: AdGuard Japanese filter
+  id: 1007
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/8.txt
+  name: AdGuard Dutch filter
+  id: 1008
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/9.txt
+  name: AdGuard Spanish/Portuguese filter
+  id: 1009
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/10.txt
+  name: Filter unblocking search ads and self-promotion
+  id: 1010
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/11.txt
+  name: AdGuard Mobile Ads filter
+  id: 1011
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/12.txt
+  name: AdGuard Safari filter
+  id: 1012
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/13.txt
+  name: AdGuard Turkish filter
+  id: 1013
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/14.txt
+  name: AdGuard Annoyances filter
+  id: 1014
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/15.txt
+  name: AdGuard Simplified domain names filter
+  id: 1015
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/16.txt
+  name: AdGuard French filter
+  id: 1016
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/101.txt
+  name: EasyList
+  id: 1101
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/102.txt
+  name: ABPindo
+  id: 1102
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/103.txt
+  name: Bulgarian list
+  id: 1103
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/104.txt
+  name: EasyList China
+  id: 1104
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/105.txt
+  name: EasyList Czech and Slovak
+  id: 1105
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/106.txt
+  name: EasyList Dutch
+  id: 1106
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/107.txt
+  name: EasyList Germany
+  id: 1107
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/108.txt
+  name: EasyList Hebrew
+  id: 1108
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/109.txt
+  name: EasyList Italy
+  id: 1109
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/110.txt
+  name: EasyList Lithuania
+  id: 1110
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/111.txt
+  name: Latvian List
+  id: 1111
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/112.txt
+  name: Liste AR
+  id: 1112
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/113.txt
+  name: Liste FR
+  id: 1113
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/114.txt
+  name: ROList
+  id: 1114
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/115.txt
+  name: RU AdList
+  id: 1115
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/116.txt
+  name: (Obsolete) Wiltteri
+  id: 1116
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/117.txt
+  name: Polskie Filtry Wewnętrzne
+  id: 1117
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/118.txt
+  name: EasyPrivacy
+  id: 1118
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/119.txt
+  name: Icelandic ABP List
+  id: 1119
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/120.txt
+  name: AdBlockID
+  id: 1120
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/121.txt
+  name: Greek AdBlock Filter
+  id: 1121
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/122.txt
+  name: Fanboy's Annoyances
+  id: 1122
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/123.txt
+  name: Fanboy's Social Blocking List
+  id: 1123
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/200.txt
+  name: ABP Japanese Filters
+  id: 1200
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/201.txt
+  name: Web Annoyances Ultralist
+  id: 1201
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/202.txt
+  name: Thai Ads Filters
+  id: 1202
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/203.txt
+  name: hufilter
+  id: 1203
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/204.txt
+  name: Peter Lowe's Blocklist
+  id: 1204
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/205.txt
+  name: (Obsolete) Schacks Adblock Plus liste
+  id: 1205
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/206.txt
+  name: Xfiles
+  id: 1206
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/207.txt
+  name: Adblock Warning Removal List
+  id: 1207
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/208.txt
+  name: Malware Domains Blocklist
+  id: 1208
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/209.txt
+  name: (Obsolete) Prebake
+  id: 1209
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/210.txt
+  name: Spam404
+  id: 1210
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/211.txt
+  name: (Obsolete) Anti-Adblock Killer | Reek
+  id: 1211
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/212.txt
+  name: 'RU AdList: Counters'
+  id: 1212
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/213.txt
+  name: 'RU AdList: BitBlock'
+  id: 1213
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/214.txt
+  name: ABPVN List
+  id: 1214
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/215.txt
+  name: Fanboy's Enhanced Tracking List
+  id: 1215
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/216.txt
+  name: Official Polish filters for AdBlock, uBlock Origin & AdGuard
+  id: 1216
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/217.txt
+  name: Polskie Filtry Ciasteczkowe
+  id: 1217
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/218.txt
+  name: Estonian List
+  id: 1218
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/219.txt
+  name: ChinaList+EasyList
+  id: 1219
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/220.txt
+  name: CJX's Annoyance List
+  id: 1220
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/221.txt
+  name: Polskie Filtry Społecznościowe
+  id: 1221
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/222.txt
+  name: Adblock-Persian list
+  id: 1222
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/223.txt
+  name: Fanboy's Swedish
+  id: 1223
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/224.txt
+  name: (Obsolete) Korean Adblock List
+  id: 1224
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/225.txt
+  name: Fanboy Anti-Facebook List
+  id: 1225
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/226.txt
+  name: Fanboy's Vietnamese
+  id: 1226
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/227.txt
+  name: List-KR
+  id: 1227
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/228.txt
+  name: xinggsf
+  id: 1228
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/229.txt
+  name: I don't care about cookies
+  id: 1229
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/230.txt
+  name: FanboyEspanol
+  id: 1230
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/231.txt
+  name: Easylist Spanish
+  id: 1231
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/232.txt
+  name: KAD - Przekręty
+  id: 1232
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/233.txt
+  name: Adblock List for Finland
+  id: 1233
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/234.txt
+  name: ROLIST2
+  id: 1234
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/235.txt
+  name: Iranian filter
+  id: 1235
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/236.txt
+  name: road-block
+  id: 1236
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/237.txt
+  name: Polskie Filtry Elementów Irytujących
+  id: 1237
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/238.txt
+  name: Polish Anti Adblock Filters
+  id: 1238
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/239.txt
+  name: Fanboy's Anti-thirdparty Fonts
+  id: 1239
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/240.txt
+  name: BarbBlock
+  id: 1240
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/241.txt
+  name: EasyList Cookie List
+  id: 1241
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/242.txt
+  name: NoCoin Filter List
+  id: 1242
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/243.txt
+  name: Frellwit's Swedish Filter
+  id: 1243
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/244.txt
+  name: YousList
+  id: 1244
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/245.txt
+  name: AlleBlock
+  id: 1245
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/246.txt
+  name: EasyList Polish
+  id: 1246
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/247.txt
+  name: Polski Antyirytujący Dodatek Specjalny
+  id: 1247
+- enabled: false
+  url: https://filters.adtidy.org/extension/chromium/filters/249.txt
+  name: Dandelion Sprout's Nordic Filters
+  id: 1249
+whitelist_filters: []
+user_rules: []
+dhcp:
+  enabled: false
+  interface_name: ""
+  gateway_ip: ""
+  subnet_mask: ""
+  range_start: ""
+  range_end: ""
+  lease_duration: 3600
+  icmp_timeout_msec: 1000
+clients: []
+log_file: ""
+verbose: false
+schema_version: 6
