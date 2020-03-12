@@ -34,9 +34,8 @@ dns:
   safebrowsing_block_host: standard-block.dns.adguard.com
   cache_size: 65536
   upstream_dns:
-  - tls://8.8.4.4:853
-  - tls://8.8.8.8:853
-  - tls://dns.google:853
+  - https://dns.alidns.com:443/dns-query
+  - tls://dns.alidns.com:853
   filtering_enabled: false
   filters_update_interval: 1
   parental_enabled: false
