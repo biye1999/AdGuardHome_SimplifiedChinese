@@ -451,7 +451,7 @@
     "tags_title": "标签",
     "test_upstream_btn": "检查上游 DNS 服务器",
     "time_table_header": "时间",
-    "top_blocked_domains": "已拦截域名排行",
+    "top_blocked_domains": "已过滤域名排行",
     "top_clients": "客户端排行",
     "topline_expired_certificate": "SSL 证书已过期。请在<0>加密配置</0>中进行更新。",
     "topline_expiring_certificate": "SSL 证书即将过期。请在<0>加密配置</0>中进行更新。",
