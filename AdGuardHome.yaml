@@ -412,6 +412,14 @@ filters:
   url: https://filters.adtidy.org/extension/chromium/filters/249.txt
   name: Dandelion Sprout's Nordic Filters
   id: 1249
+- enabled: false
+  url: https://gitee.com/privacy-protection-tools/anti-ad/raw/master/easylist.txt
+  name: anti-AD
+  id: 2001
+- enabled: false
+  url: https://gitee.com/halflife/list/raw/master/ad.txt
+  name: My AdFilters
+  id: 2002
 whitelist_filters: []
 user_rules: []
 dhcp:
