@@ -412,6 +412,10 @@ filters:
   url: https://filters.adtidy.org/extension/chromium/filters/249.txt
   name: Dandelion Sprout's Nordic Filters
   id: 1249
+- enabled: false
+  url: https://cdn.jsdelivr.net/gh/hezhijie0327/AdFilter@master/list.txt
+  name: Zhijie's Ad Filters
+  id: 2001
 whitelist_filters: []
 user_rules: []
 dhcp:
