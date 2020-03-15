@@ -413,8 +413,8 @@ filters:
   name: Dandelion Sprout's Nordic Filters
   id: 1249
 - enabled: false
-  url: https://cdn.jsdelivr.net/gh/hezhijie0327/AdFilter@master/list.txt
-  name: Zhijie's Ad Filters
+  url: https://raw.githubusercontent.com/hezhijie0327/AdFilter/master/list.txt
+  name: Zhijie's Ad Filter
   id: 2001
 whitelist_filters: []
 user_rules: []
